@@ -6,7 +6,7 @@ describe('buildNote', () => {
     const note = buildNote({ title: 'Docker', body: 'layers are cached' });
     expect(note.title).toBe('Docker');
     expect(note.body).toBe('layers are cached');
-    expect(note.id).toHaveLength(35);
+    expect(note.id).toHaveLength(36);
   });
 
   it('trims surrounding whitespace from the title', () => {
